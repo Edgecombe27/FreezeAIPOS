@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CE7793BAC91EC9893A2A1A0 /* Pods_Freeze_AI_POSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9647B58BCBC36F18FDE88C6C /* Pods_Freeze_AI_POSUITests.framework */; };
+		39E2E65933CD92B6CE5B525F /* Pods_Freeze_AI_POS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CC5331E09B400EB056B01F /* Pods_Freeze_AI_POS.framework */; };
+		52BB2E785D0B2CB0CC5DDF73 /* Pods_Freeze_AI_POSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F382DD57DAF653DB641F9F23 /* Pods_Freeze_AI_POSTests.framework */; };
+		AE18CB2721835DB700A019E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE18CB2621835DB700A019E6 /* AppDelegate.swift */; };
+		AE18CB2921835DB700A019E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE18CB2821835DB700A019E6 /* ViewController.swift */; };
+		AE18CB2C21835DB700A019E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE18CB2A21835DB700A019E6 /* Main.storyboard */; };
+		AE18CB2F21835DB700A019E6 /* Freeze_AI_POS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE18CB2D21835DB700A019E6 /* Freeze_AI_POS.xcdatamodeld */; };
+		AE18CB3121835DB800A019E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE18CB3021835DB800A019E6 /* Assets.xcassets */; };
+		AE18CB3421835DB800A019E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE18CB3221835DB800A019E6 /* LaunchScreen.storyboard */; };
+		AE18CB3F21835DB800A019E6 /* Freeze_AI_POSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE18CB3E21835DB800A019E6 /* Freeze_AI_POSTests.swift */; };
+		AE18CB4A21835DB800A019E6 /* Freeze_AI_POSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE18CB4921835DB800A019E6 /* Freeze_AI_POSUITests.swift */; };
+		AE18CB5E2183872700A019E6 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE18CB5D2183872700A019E6 /* MenuItem.swift */; };
+		AE7F54A42188C6DF006638EC /* JSONReadFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7F54A32188C6DF006638EC /* JSONReadFailure.swift */; };
+		AE7F54A62188CA0C006638EC /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7F54A52188CA0C006638EC /* Ingredient.swift */; };
+		AE7F54A82188CB76006638EC /* Preparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7F54A72188CB76006638EC /* Preparation.swift */; };
+		AE7F54AA2188DBEB006638EC /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7F54A92188DBEB006638EC /* Order.swift */; };
+		AE7F54AC2188DD29006638EC /* Discount.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7F54AB2188DD29006638EC /* Discount.swift */; };
+		AE7F54AE2188E662006638EC /* Promotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7F54AD2188E662006638EC /* Promotion.swift */; };
+		AEB914FF2184CAE300ABE5F9 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB914FE2184CAE300ABE5F9 /* Menu.swift */; };
+		AEB915012184CBA500ABE5F9 /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB915002184CBA500ABE5F9 /* Classification.swift */; };
+		AED1A44B21838FFD00BA73A1 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED1A44A21838FFD00BA73A1 /* Keys.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE18CB3B21835DB800A019E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE18CB1B21835DB600A019E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE18CB2221835DB600A019E6;
+			remoteInfo = "Freeze AI POS";
+		};
+		AE18CB4621835DB800A019E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE18CB1B21835DB600A019E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE18CB2221835DB600A019E6;
+			remoteInfo = "Freeze AI POS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		61CC5331E09B400EB056B01F /* Pods_Freeze_AI_POS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Freeze_AI_POS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		656D342939C96253206F427E /* Pods-Freeze AI POSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freeze AI POSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Freeze AI POSTests/Pods-Freeze AI POSTests.release.xcconfig"; sourceTree = "<group>"; };
+		68D663D725FD6D9E8F31EA7F /* Pods-Freeze AI POSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freeze AI POSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Freeze AI POSUITests/Pods-Freeze AI POSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6E698122C4B4DF4213301813 /* Pods-Freeze AI POS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freeze AI POS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Freeze AI POS/Pods-Freeze AI POS.release.xcconfig"; sourceTree = "<group>"; };
+		94A33E0C567D138BA6EFACE1 /* Pods-Freeze AI POSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freeze AI POSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Freeze AI POSUITests/Pods-Freeze AI POSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9647B58BCBC36F18FDE88C6C /* Pods_Freeze_AI_POSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Freeze_AI_POSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE18CB2321835DB600A019E6 /* Freeze AI POS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Freeze AI POS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE18CB2621835DB700A019E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE18CB2821835DB700A019E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE18CB2B21835DB700A019E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE18CB2E21835DB700A019E6 /* Freeze_AI_POS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Freeze_AI_POS.xcdatamodel; sourceTree = "<group>"; };
+		AE18CB3021835DB800A019E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE18CB3321835DB800A019E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE18CB3521835DB800A019E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE18CB3A21835DB800A019E6 /* Freeze AI POSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Freeze AI POSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE18CB3E21835DB800A019E6 /* Freeze_AI_POSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Freeze_AI_POSTests.swift; sourceTree = "<group>"; };
+		AE18CB4021835DB800A019E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE18CB4521835DB800A019E6 /* Freeze AI POSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Freeze AI POSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE18CB4921835DB800A019E6 /* Freeze_AI_POSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Freeze_AI_POSUITests.swift; sourceTree = "<group>"; };
+		AE18CB4B21835DB800A019E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE18CB5D2183872700A019E6 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		AE7F54A32188C6DF006638EC /* JSONReadFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReadFailure.swift; sourceTree = "<group>"; };
+		AE7F54A52188CA0C006638EC /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		AE7F54A72188CB76006638EC /* Preparation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preparation.swift; sourceTree = "<group>"; };
+		AE7F54A92188DBEB006638EC /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		AE7F54AB2188DD29006638EC /* Discount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discount.swift; sourceTree = "<group>"; };
+		AE7F54AD2188E662006638EC /* Promotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promotion.swift; sourceTree = "<group>"; };
+		AEB914FE2184CAE300ABE5F9 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		AEB915002184CBA500ABE5F9 /* Classification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
+		AED1A44921838D9F00BA73A1 /* Freeze AI POS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Freeze AI POS-Bridging-Header.h"; sourceTree = "<group>"; };
+		AED1A44A21838FFD00BA73A1 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		D73950EBF620BBA354DE9414 /* Pods-Freeze AI POS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freeze AI POS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Freeze AI POS/Pods-Freeze AI POS.debug.xcconfig"; sourceTree = "<group>"; };
+		F382DD57DAF653DB641F9F23 /* Pods_Freeze_AI_POSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Freeze_AI_POSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5ACA37A609D35356A08847E /* Pods-Freeze AI POSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freeze AI POSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Freeze AI POSTests/Pods-Freeze AI POSTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE18CB2021835DB600A019E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E2E65933CD92B6CE5B525F /* Pods_Freeze_AI_POS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE18CB3721835DB800A019E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BB2E785D0B2CB0CC5DDF73 /* Pods_Freeze_AI_POSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE18CB4221835DB800A019E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CE7793BAC91EC9893A2A1A0 /* Pods_Freeze_AI_POSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66E6048C71202CBCA64BE988 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D73950EBF620BBA354DE9414 /* Pods-Freeze AI POS.debug.xcconfig */,
+				6E698122C4B4DF4213301813 /* Pods-Freeze AI POS.release.xcconfig */,
+				F5ACA37A609D35356A08847E /* Pods-Freeze AI POSTests.debug.xcconfig */,
+				656D342939C96253206F427E /* Pods-Freeze AI POSTests.release.xcconfig */,
+				94A33E0C567D138BA6EFACE1 /* Pods-Freeze AI POSUITests.debug.xcconfig */,
+				68D663D725FD6D9E8F31EA7F /* Pods-Freeze AI POSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE18CB1A21835DB600A019E6 = {
+			isa = PBXGroup;
+			children = (
+				AE18CB2521835DB600A019E6 /* Freeze AI POS */,
+				AE18CB3D21835DB800A019E6 /* Freeze AI POSTests */,
+				AE18CB4821835DB800A019E6 /* Freeze AI POSUITests */,
+				AE18CB2421835DB600A019E6 /* Products */,
+				66E6048C71202CBCA64BE988 /* Pods */,
+				BA4941DB2C72B3E5383DA31A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE18CB2421835DB600A019E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE18CB2321835DB600A019E6 /* Freeze AI POS.app */,
+				AE18CB3A21835DB800A019E6 /* Freeze AI POSTests.xctest */,
+				AE18CB4521835DB800A019E6 /* Freeze AI POSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE18CB2521835DB600A019E6 /* Freeze AI POS */ = {
+			isa = PBXGroup;
+			children = (
+				AE18CB5721835EA300A019E6 /* Model */,
+				AE18CB2621835DB700A019E6 /* AppDelegate.swift */,
+				AE18CB2821835DB700A019E6 /* ViewController.swift */,
+				AE18CB3021835DB800A019E6 /* Assets.xcassets */,
+				AE18CB3221835DB800A019E6 /* LaunchScreen.storyboard */,
+				AE18CB2A21835DB700A019E6 /* Main.storyboard */,
+				AE18CB3521835DB800A019E6 /* Info.plist */,
+				AE18CB2D21835DB700A019E6 /* Freeze_AI_POS.xcdatamodeld */,
+			);
+			path = "Freeze AI POS";
+			sourceTree = "<group>";
+		};
+		AE18CB3D21835DB800A019E6 /* Freeze AI POSTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE18CB3E21835DB800A019E6 /* Freeze_AI_POSTests.swift */,
+				AE18CB4021835DB800A019E6 /* Info.plist */,
+			);
+			path = "Freeze AI POSTests";
+			sourceTree = "<group>";
+		};
+		AE18CB4821835DB800A019E6 /* Freeze AI POSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE18CB4921835DB800A019E6 /* Freeze_AI_POSUITests.swift */,
+				AE18CB4B21835DB800A019E6 /* Info.plist */,
+			);
+			path = "Freeze AI POSUITests";
+			sourceTree = "<group>";
+		};
+		AE18CB5721835EA300A019E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE18CB5D2183872700A019E6 /* MenuItem.swift */,
+				AE7F54AB2188DD29006638EC /* Discount.swift */,
+				AE7F54A52188CA0C006638EC /* Ingredient.swift */,
+				AE7F54A72188CB76006638EC /* Preparation.swift */,
+				AEB915002184CBA500ABE5F9 /* Classification.swift */,
+				AE7F54A32188C6DF006638EC /* JSONReadFailure.swift */,
+				AEB914FE2184CAE300ABE5F9 /* Menu.swift */,
+				AE7F54A92188DBEB006638EC /* Order.swift */,
+				AE7F54AD2188E662006638EC /* Promotion.swift */,
+				AED1A44A21838FFD00BA73A1 /* Keys.swift */,
+				AED1A44921838D9F00BA73A1 /* Freeze AI POS-Bridging-Header.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA4941DB2C72B3E5383DA31A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61CC5331E09B400EB056B01F /* Pods_Freeze_AI_POS.framework */,
+				F382DD57DAF653DB641F9F23 /* Pods_Freeze_AI_POSTests.framework */,
+				9647B58BCBC36F18FDE88C6C /* Pods_Freeze_AI_POSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE18CB2221835DB600A019E6 /* Freeze AI POS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE18CB4E21835DB800A019E6 /* Build configuration list for PBXNativeTarget "Freeze AI POS" */;
+			buildPhases = (
+				2B273DE655155F2ADDE114C7 /* [CP] Check Pods Manifest.lock */,
+				AE18CB1F21835DB600A019E6 /* Sources */,
+				AE18CB2021835DB600A019E6 /* Frameworks */,
+				AE18CB2121835DB600A019E6 /* Resources */,
+				2D306F916B879FD514F65D3F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Freeze AI POS";
+			productName = "Freeze AI POS";
+			productReference = AE18CB2321835DB600A019E6 /* Freeze AI POS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE18CB3921835DB800A019E6 /* Freeze AI POSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE18CB5121835DB800A019E6 /* Build configuration list for PBXNativeTarget "Freeze AI POSTests" */;
+			buildPhases = (
+				C42BB015E76D4E481157AEB7 /* [CP] Check Pods Manifest.lock */,
+				AE18CB3621835DB800A019E6 /* Sources */,
+				AE18CB3721835DB800A019E6 /* Frameworks */,
+				AE18CB3821835DB800A019E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE18CB3C21835DB800A019E6 /* PBXTargetDependency */,
+			);
+			name = "Freeze AI POSTests";
+			productName = "Freeze AI POSTests";
+			productReference = AE18CB3A21835DB800A019E6 /* Freeze AI POSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE18CB4421835DB800A019E6 /* Freeze AI POSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE18CB5421835DB800A019E6 /* Build configuration list for PBXNativeTarget "Freeze AI POSUITests" */;
+			buildPhases = (
+				F814A81F5004F43F51AB7983 /* [CP] Check Pods Manifest.lock */,
+				AE18CB4121835DB800A019E6 /* Sources */,
+				AE18CB4221835DB800A019E6 /* Frameworks */,
+				AE18CB4321835DB800A019E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE18CB4721835DB800A019E6 /* PBXTargetDependency */,
+			);
+			name = "Freeze AI POSUITests";
+			productName = "Freeze AI POSUITests";
+			productReference = AE18CB4521835DB800A019E6 /* Freeze AI POSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE18CB1B21835DB600A019E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Spencer Geoffrey Edgecombe";
+				TargetAttributes = {
+					AE18CB2221835DB600A019E6 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					AE18CB3921835DB800A019E6 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = AE18CB2221835DB600A019E6;
+					};
+					AE18CB4421835DB800A019E6 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = AE18CB2221835DB600A019E6;
+					};
+				};
+			};
+			buildConfigurationList = AE18CB1E21835DB600A019E6 /* Build configuration list for PBXProject "Freeze AI POS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE18CB1A21835DB600A019E6;
+			productRefGroup = AE18CB2421835DB600A019E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE18CB2221835DB600A019E6 /* Freeze AI POS */,
+				AE18CB3921835DB800A019E6 /* Freeze AI POSTests */,
+				AE18CB4421835DB800A019E6 /* Freeze AI POSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE18CB2121835DB600A019E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE18CB3421835DB800A019E6 /* LaunchScreen.storyboard in Resources */,
+				AE18CB3121835DB800A019E6 /* Assets.xcassets in Resources */,
+				AE18CB2C21835DB700A019E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE18CB3821835DB800A019E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE18CB4321835DB800A019E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B273DE655155F2ADDE114C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Freeze AI POS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D306F916B879FD514F65D3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Freeze AI POS/Pods-Freeze AI POS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Freeze AI POS/Pods-Freeze AI POS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C42BB015E76D4E481157AEB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Freeze AI POSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F814A81F5004F43F51AB7983 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Freeze AI POSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE18CB1F21835DB600A019E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEB914FF2184CAE300ABE5F9 /* Menu.swift in Sources */,
+				AE18CB2921835DB700A019E6 /* ViewController.swift in Sources */,
+				AE7F54AC2188DD29006638EC /* Discount.swift in Sources */,
+				AE7F54A62188CA0C006638EC /* Ingredient.swift in Sources */,
+				AEB915012184CBA500ABE5F9 /* Classification.swift in Sources */,
+				AE7F54AA2188DBEB006638EC /* Order.swift in Sources */,
+				AE18CB5E2183872700A019E6 /* MenuItem.swift in Sources */,
+				AE18CB2721835DB700A019E6 /* AppDelegate.swift in Sources */,
+				AE18CB2F21835DB700A019E6 /* Freeze_AI_POS.xcdatamodeld in Sources */,
+				AE7F54A82188CB76006638EC /* Preparation.swift in Sources */,
+				AE7F54A42188C6DF006638EC /* JSONReadFailure.swift in Sources */,
+				AE7F54AE2188E662006638EC /* Promotion.swift in Sources */,
+				AED1A44B21838FFD00BA73A1 /* Keys.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE18CB3621835DB800A019E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE18CB3F21835DB800A019E6 /* Freeze_AI_POSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE18CB4121835DB800A019E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE18CB4A21835DB800A019E6 /* Freeze_AI_POSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE18CB3C21835DB800A019E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE18CB2221835DB600A019E6 /* Freeze AI POS */;
+			targetProxy = AE18CB3B21835DB800A019E6 /* PBXContainerItemProxy */;
+		};
+		AE18CB4721835DB800A019E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE18CB2221835DB600A019E6 /* Freeze AI POS */;
+			targetProxy = AE18CB4621835DB800A019E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE18CB2A21835DB700A019E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE18CB2B21835DB700A019E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE18CB3221835DB800A019E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE18CB3321835DB800A019E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE18CB4C21835DB800A019E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE18CB4D21835DB800A019E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE18CB4F21835DB800A019E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D73950EBF620BBA354DE9414 /* Pods-Freeze AI POS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DB85A83894;
+				INFOPLIST_FILE = "Freeze AI POS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.freezeai.Freeze-AI-POS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Freeze AI POS/Model/Freeze AI POS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		AE18CB5021835DB800A019E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E698122C4B4DF4213301813 /* Pods-Freeze AI POS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DB85A83894;
+				INFOPLIST_FILE = "Freeze AI POS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.freezeai.Freeze-AI-POS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Freeze AI POS/Model/Freeze AI POS-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		AE18CB5221835DB800A019E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5ACA37A609D35356A08847E /* Pods-Freeze AI POSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Freeze AI POSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.freezeai.Freeze-AI-POSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Freeze AI POS.app/Freeze AI POS";
+			};
+			name = Debug;
+		};
+		AE18CB5321835DB800A019E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 656D342939C96253206F427E /* Pods-Freeze AI POSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Freeze AI POSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.freezeai.Freeze-AI-POSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Freeze AI POS.app/Freeze AI POS";
+			};
+			name = Release;
+		};
+		AE18CB5521835DB800A019E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94A33E0C567D138BA6EFACE1 /* Pods-Freeze AI POSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Freeze AI POSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.freezeai.Freeze-AI-POSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Freeze AI POS";
+			};
+			name = Debug;
+		};
+		AE18CB5621835DB800A019E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68D663D725FD6D9E8F31EA7F /* Pods-Freeze AI POSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Freeze AI POSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.freezeai.Freeze-AI-POSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Freeze AI POS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE18CB1E21835DB600A019E6 /* Build configuration list for PBXProject "Freeze AI POS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE18CB4C21835DB800A019E6 /* Debug */,
+				AE18CB4D21835DB800A019E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE18CB4E21835DB800A019E6 /* Build configuration list for PBXNativeTarget "Freeze AI POS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE18CB4F21835DB800A019E6 /* Debug */,
+				AE18CB5021835DB800A019E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE18CB5121835DB800A019E6 /* Build configuration list for PBXNativeTarget "Freeze AI POSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE18CB5221835DB800A019E6 /* Debug */,
+				AE18CB5321835DB800A019E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE18CB5421835DB800A019E6 /* Build configuration list for PBXNativeTarget "Freeze AI POSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE18CB5521835DB800A019E6 /* Debug */,
+				AE18CB5621835DB800A019E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AE18CB2D21835DB700A019E6 /* Freeze_AI_POS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AE18CB2E21835DB700A019E6 /* Freeze_AI_POS.xcdatamodel */,
+			);
+			currentVersion = AE18CB2E21835DB700A019E6 /* Freeze_AI_POS.xcdatamodel */;
+			path = Freeze_AI_POS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AE18CB1B21835DB600A019E6 /* Project object */;
+}
